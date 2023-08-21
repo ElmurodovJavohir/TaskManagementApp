@@ -1,0 +1,45 @@
+Assignment: Building a Task Management Web App
+
+Task: Your task is to build a Task Management web application using FastAPI for the backend and Vue.js for the frontend. The application should allow users to perform CRUD operations on tasks through a modern and responsive web interface.
+
+Backend Requirements (FastAPI):
+
+Create a FastAPI project named "TaskManagementApp".
+Implement a data model for tasks with the following fields:
+id (int, auto-generated)
+title (str)
+description (str)
+created_at (datetime, auto-generated)
+due_date (date)
+completed (bool, default=False)
+Set up database connectivity using an in-memory database (SQLite) or an external database of your choice.
+Implement API endpoints for CRUD operations on tasks (list, create, retrieve, update, delete).
+Implement proper error handling and status codes for different scenarios.
+Optional: Add user authentication and authorization using OAuth2 or API tokens.
+Frontend Requirements (Vue.js):
+
+Create a Vue.js project for the frontend of the Task Management web app.
+Design a responsive landing page that displays a list of tasks and provides options to add, edit, and delete tasks.
+Implement a task creation form with fields for title, description, due date, and completion status.
+Implement an edit form that allows users to update task details.
+Add buttons or links to mark tasks as completed or delete tasks.
+Use Vue.js components to modularize and organize your frontend code.
+Style the frontend using CSS or a CSS framework (e.g., Bootstrap) for a modern and appealing interface.
+Ensure that the frontend communicates with the FastAPI backend to perform CRUD operations.
+Bonus (if time allows):
+
+Implement API documentation using Swagger UI or ReDoc for the FastAPI backend.
+Add validation and error messaging on the frontend forms.
+Implement user authentication and customize the frontend based on user roles (e.g., show different options for authenticated users).
+Add client-side filtering, sorting, and pagination for the task list.
+Enhance the frontend design and user experience using Vue.js transitions and animations.
+Submission:
+
+Create a GitHub repository and commit your code regularly.
+Include a README.md file with instructions on how to set up and run your project.
+Provide a brief explanation of any design decisions or choices you made in your code.
+Note:
+
+Feel free to use any libraries, tools, or Vue.js plugins you're comfortable with. The goal of this assignment is to assess your ability to integrate a FastAPI backend with a Vue.js frontend to create a fully functional web application. If you have any questions during the assignment, don't hesitate to reach out for clarification.
+
+Ensure your code is well-structured, follows best practices, and provides a smooth user experience. Good luck!
