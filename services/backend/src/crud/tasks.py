@@ -27,7 +27,7 @@ async def update_task(task_id, task, current_user) -> TaskOutSchema:
     except DoesNotExist:
         raise HTTPException(status_code=404, detail=f"Task {task_id} not found")
 
-    if db_task.author.id == current_user.id:
+    if db_task.user.id == current_user.id:
         await Tasks.filter(id=task_id).update(**task.dict(exclude_unset=True))
         return await TaskOutSchema.from_queryset_single(Tasks.get(id=task_id))
 

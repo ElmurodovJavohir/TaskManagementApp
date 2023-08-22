@@ -4,8 +4,9 @@ from pydantic import BaseModel
 from tortoise.contrib.pydantic import pydantic_model_creator
 
 from src.database.models import Tasks
+from tortoise import Tortoise
 
-
+Tortoise.init_models(["src.database.models"], "models")
 TaskInSchema = pydantic_model_creator(
     Tasks, name="TaskIn", exclude=["user_id"], exclude_readonly=True
 )
